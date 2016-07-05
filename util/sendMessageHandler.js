@@ -220,6 +220,7 @@ var sendImageMessage = function(recipientId) {
 module.exports = {
   sendImageMessage: sendImageMessage,
   sendButtonMessage: sendButtonMessage,
+  sendGenericMessage: sendGenericMessage,
   sendTextMessage: sendTextMessage,
   sendReceiptMessage: sendReceiptMessage,
   callSendAPI: callSendAPI
