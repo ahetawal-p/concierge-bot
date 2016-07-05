@@ -1,13 +1,13 @@
 var config = require('config');
 
 // App Secret can be retrieved from the App Dashboard
-const APP_SECRET;
+var APP_SECRET;
 
 // Arbitrary value used to validate a webhook
-const VALIDATION_TOKEN;
+var VALIDATION_TOKEN;
 
 // Generate a page access token for your page from the App Dashboard
-const PAGE_ACCESS_TOKEN;
+var PAGE_ACCESS_TOKEN;
 
 var loadConfigs = function() {
 	// App Secret can be retrieved from the App Dashboard
