@@ -1,4 +1,4 @@
-var sendHandler = require('sendMessageHandler.js');
+var sendHandler = require('./sendMessageHandler.js');
 /*
  * Authorization Event
  *
