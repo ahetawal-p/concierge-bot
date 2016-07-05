@@ -77,7 +77,6 @@ router.post('/', function (req, res) {
  */
 var verifyRequestSignature = function(req, res, buf) {
   var signature = req.headers["x-hub-signature"];
-  console.log("Called here");
   if (!signature) {
     // For testing, let's log an error. In production, you should throw an 
     // error.
