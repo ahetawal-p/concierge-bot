@@ -9,8 +9,12 @@ var home = require('./routes/index');
 var webhook = require('./routes/webhook');
 var constants = require('./util/constants.js');
 
-//load configs on app startup
-constants.load();
+
+if (!(constants.APP_SECRET && constants.VALIDATION_TOKEN && constants.PAGE_ACCESS_TOKEN)) {
+      console.error("Missing config values");
+      process.exit(1);
+}
+
 
 var app = express();
 
